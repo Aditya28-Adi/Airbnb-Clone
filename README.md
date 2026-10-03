@@ -405,7 +405,7 @@ EMAIL_PASS=
 Clone the repository
 
 ```
-git clone https://github.com/Amit-1424/Wanderlust-airbnb-clone
+https://github.com/Aditya28-Adi/Airbnb-Clone.git
 ```
 
 Move into project folder
@@ -474,6 +474,3 @@ https://github.com/Amit-1424
 
 ---
 
-# ⭐ Support
-
-If you found this project useful, please consider giving it a **star ⭐ on GitHub**.
