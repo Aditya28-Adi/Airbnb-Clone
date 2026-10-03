@@ -11,9 +11,6 @@ The project demonstrates real-world backend architecture including authenticatio
 🌐 Live Website
 https://wanderlust-tqzm.onrender.com/listings
 
-📂 GitHub Repository
-https://github.com/Amit-1424/Wanderlust-airbnb-clone
-
 ---
 
 # 📌 Project Overview
