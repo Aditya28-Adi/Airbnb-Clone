@@ -1,0 +1,316 @@
+.navbar{
+    height: 5rem;
+    background-color: white;
+
+}
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+.nav-link   {
+    color: #222222 !important;
+}
+
+/* footer */
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info {
+    display: flex;
+    flex-direction: column;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.f-info-socials i {
+    margin-right: 1rem;
+}
+.f-info-socials .f-info-links {
+    font-size: 1.5rem;
+}
+/* ===== GLOBAL LAYOUT FIX ===== */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+main {
+    flex: 1;
+}
+
+/* ===== CARD SYSTEM ===== */
+
+/* ===== CARD SYSTEM ===== */
+
+.listing-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    height: 320px;              /* Fixed card height */
+    transition: all 0.3s ease;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Image wrapper */
+.image-wrapper {
+    height: 300px;              /* SAME IMAGE HEIGHT FOR ALL */
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Force image to fill wrapper */
+.listing-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* Crop image nicely */
+    display: block;
+}
+
+/* Card body */
+.card-body {
+    flex: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ===== SHOW PAGE ===== */
+
+/* ===============================
+   SHOW PAGE STYLING
+==================================*/
+
+.show-image-card {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.show-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+}
+
+.show-details-card {
+  border-radius: 18px;
+  background: #ffffff;
+}
+
+/* Review Sidebar */
+.review-card {
+  border-radius: 15px;
+  background: #ffffff;
+}
+
+/* All Reviews Section */
+.all-reviews {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* Single Review */
+.single-review {
+  border-radius: 12px;
+  background: #f8f9fa;
+  font-size: 0.9rem;
+}
+
+/* Scrollbar styling */
+.all-reviews::-webkit-scrollbar {
+  width: 6px;
+}
+
+.all-reviews::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* button review */
+.btn-review{
+    margin: 0.5rem ;
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .show-img {
+    height: 300px;
+  }
+
+  .all-reviews {
+    max-height: none;
+  }
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    margin-top: auto;
+}
+
+/* ===== RESPONSIVE FIX ===== */
+
+@media (max-width: 768px) {
+
+    .listing-card {
+        height: 300px;
+    }
+
+    .image-wrapper {
+        height: 170px;
+    }
+
+    .show-img {
+        height: 250px;
+    }
+}
+
+
+/* button-flash */
+.auto-dismiss {
+  position: relative;
+  overflow: hidden;
+}
+
+.auto-dismiss::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  animation: shrink 3s linear forwards;
+}
+
+/* Success Alert Border */
+.alert-success.auto-dismiss::after {
+  background-color: #198754;
+}
+
+/* Danger Alert Border */
+.alert-danger.auto-dismiss::after {
+  background-color: #dc3545;
+}
+
+/* Optional: Add more if needed later */
+.alert-warning.auto-dismiss::after {
+  background-color: #ffc107;
+}
+
+.alert-info.auto-dismiss::after {
+  background-color: #0dcaf0;
+}
+
+
+
+.filters-wrapper {
+    display: flex;
+    justify-content: center;   /* CENTER */
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.filter-item i {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.filter-item:hover {
+    color: black;
+    transform: scale(1.05);
+}
+
+.filter-active {
+    color: black;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    padding-bottom: 6px;
+}
+
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 50%;
+    padding: 10px 14px;
+    margin-left: 12rem;
+
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 500;
+    color: #3c4043;
+    text-decoration: none;
+
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.google-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+.google-btn:hover {
+    background-color: lightgrey;
+    border-color: #c6c6c6;
+}
+
+.google-btn:active {
+    background-color: #f1f3f4;
+}
+
+#image-edit{
+  height: 200px;
+  object-fit: contain;
+}
+
+@keyframes shrink {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+
+

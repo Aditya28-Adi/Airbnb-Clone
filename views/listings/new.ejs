@@ -1,0 +1,66 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container mt-4 form-container">
+    <h3 class="mb-4">Create a New Listing</h3>
+
+    <form method="POST" action="/listings" class="needs-validation" novalidate needs-validation enctype="multipart/form-data">
+
+            <div class="row">
+                <div class="mb-3 col-md-6">
+                    <label class="form-label">Title</label>
+                    <input name="listing[title]" class="form-control" required />
+                    <div class="valid-feedback">Title looks good</div>
+                    <div class="invalid-feedback">Please enter the title</div>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label class="form-label">Category</label>
+                    <select name="listing[category]" class="form-select" required>
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="Beach">Beach</option>
+                        <option value="Mountains">Mountains</option>
+                        <option value="Cities">Cities</option>
+                        <option value="Luxury">Luxury</option>
+                        <option value="Countryside">Countryside</option>
+                        <option value="Unique">Unique</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a category</div>
+                </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Description</label>
+            <textarea name="listing[description]" class="form-control" rows="3" required></textarea>
+            <div class="valid-feedback">description added</div>
+            <div class="invalid-feedback">please describe about the listing</div>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label">Image</label>
+            <input type="file" name="listing[image][url]" class="form-control" required />
+            <div class="invalid-feedback">image is necessary</div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col-md-6">
+                <label class="form-label">Price</label>
+                <input name="listing[price]" type="number" class="form-control" required />
+                <div class="invalid-feedback">this field is required</div>
+            </div>
+
+            <div class="mb-3 col-md-6">
+                <label class="form-label">Country</label>
+                <input name="listing[country]" class="form-control" required />
+                <div class="invalid-feedback">this field is required</div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Location</label>
+            <input name="listing[location]" class="form-control" required />
+            <div class="invalid-feedback">this field is required</div>
+        </div>
+
+        <button class="btn btn-dark w-100">Add Listing</button>
+    </form>
+</div>

@@ -1,0 +1,134 @@
+const sampleListings = [
+  {
+    title: "Cozy Beachfront Cottage",
+    category: "Beach",
+    description:
+      "Escape to this charming beachfront cottage for a relaxing getaway. Enjoy stunning ocean views and easy access to the beach.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1500,
+    location: "Malibu",
+    country: "United States",
+  },
+  {
+    title: "Modern Loft in Downtown",
+    category: "Cities",
+    description:
+      "Stay in the heart of the city in this stylish loft apartment. Perfect for urban explorers!",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1200,
+    location: "New York City",
+    country: "United States",
+  },
+  {
+    title: "Mountain Retreat",
+    category: "Mountains",
+    description:
+      "Unplug and unwind in this peaceful mountain cabin. Surrounded by nature, it's a perfect place to recharge.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1000,
+    location: "Aspen",
+    country: "United States",
+  },
+  {
+    title: "Historic Villa in Tuscany",
+    category: "Countryside",
+    description:
+      "Experience the charm of Tuscany in this beautifully restored villa.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2500,
+    location: "Florence",
+    country: "Italy",
+  },
+  {
+    title: "Safari Lodge in the Serengeti",
+    category: "Unique",
+    description:
+      "Experience the thrill of the wild in a comfortable safari lodge.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 4000,
+    location: "Serengeti National Park",
+    country: "Tanzania",
+  },
+  {
+    title: "Historic Canal House",
+    category: "Cities",
+    description:
+      "Stay in a piece of history in this preserved canal house.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1800,
+    location: "Amsterdam",
+    country: "Netherlands",
+  },
+  {
+    title: "Private Island Retreat",
+    category: "Luxury",
+    description:
+      "Have an entire island to yourself.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1618140052121-39fc6db33972?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 10000,
+    location: "Fiji",
+    country: "Fiji",
+  },
+  {
+    title: "Charming Cottage in the Cotswolds",
+    category: "Countryside",
+    description:
+      "Escape to the picturesque Cotswolds.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1602088113235-229c19758e9f?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1200,
+    location: "Cotswolds",
+    country: "United Kingdom",
+  },
+  {
+    title: "Historic Brownstone in Boston",
+    category: "Cities",
+    description:
+      "Step back in time in this elegant brownstone.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1533619239233-6280475a633a?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 2200,
+    location: "Boston",
+    country: "United States",
+  },
+  {
+    title: "Beachfront Bungalow in Bali",
+    category: "Beach",
+    description:
+      "Relax on the sandy shores of Bali.",
+    image: {
+      filename: "listingimage",
+      url: "https://images.unsplash.com/photo-1602391833977-358a52198938?auto=format&fit=crop&w=800&q=60",
+    },
+    price: 1800,
+    location: "Bali",
+    country: "Indonesia",
+  }
+];
+
+module.exports = { data: sampleListings };
