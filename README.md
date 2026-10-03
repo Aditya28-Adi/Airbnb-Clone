@@ -469,8 +469,8 @@ While building this project I learned:
 
 # 👨‍💻 Author
 
-Amit Agarwal
-CSE Student — KIIT University
+Aditya Kedar
+CS Student - SPPU
 
 GitHub
 https://github.com/Amit-1424
